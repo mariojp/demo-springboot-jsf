@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="https://jakarta.ee/xml/ns/jakartaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_4_0.xsd"
+              version="4.0">
+
+<!--    &lt;!&ndash; Configuração de Navegação &ndash;&gt;-->
+<!--    <navigation-rule>-->
+<!--        <from-view-id>/index.xhtml</from-view-id>-->
+<!--        <navigation-case>-->
+<!--            <from-outcome>success</from-outcome>-->
+<!--            <to-view-id>/success.xhtml</to-view-id>-->
+<!--        </navigation-case>-->
+<!--    </navigation-rule>-->
+
+<!--    &lt;!&ndash; Suporte a Managed Beans &ndash;&gt;-->
+<!--    <managed-bean>-->
+<!--        <managed-bean-name>exampleBean</managed-bean-name>-->
+<!--        <managed-bean-class>com.example.bean.ExampleBean</managed-bean-class>-->
+<!--        <managed-bean-scope>session</managed-bean-scope>-->
+<!--    </managed-bean>-->
+
+    <!-- Configuração de ELResolver para integrar com Spring -->
+    <application>
+        <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+    </application>
+
+
+    <!-- Suporte a Converters -->
+<!--    <converter>-->
+<!--        <converter-id>exampleConverter</converter-id>-->
+<!--        <converter-class>com.example.converter.ExampleConverter</converter-class>-->
+<!--    </converter>-->
+
+    <!-- Suporte a Validators -->
+<!--    <validator>-->
+<!--        <validator-id>exampleValidator</validator-id>-->
+<!--        <validator-class>com.example.validator.ExampleValidator</validator-class>-->
+<!--    </validator>-->
+
+    <!-- Configuração de Filtros de Mensagens -->
+<!--    <application>-->
+<!--        <message-bundle>messages</message-bundle>-->
+<!--    </application>-->
+
+    <!-- Suporte a Filtros de FacesContext -->
+<!--    <factory>-->
+<!--        <faces-context-factory>com.example.factory.CustomFacesContextFactory</faces-context-factory>-->
+<!--    </factory>-->
+
+    <!-- Filtros de Renderização -->
+<!--    <render-kit>-->
+<!--        <render-kit-id>HTML_BASIC</render-kit-id>-->
+<!--        <renderer>-->
+<!--            <component-family>javax.faces.Input</component-family>-->
+<!--            <renderer-type>javax.faces.Text</renderer-type>-->
+<!--            <renderer-class>com.example.renderer.CustomRenderer</renderer-class>-->
+<!--        </renderer>-->
+<!--    </render-kit>-->
+</faces-config>

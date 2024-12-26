@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>PrimeFaces 14.0.6 with Jakarta Faces</title>
+</h:head>
+<h:body>
+    <h:form id="form">
+        <p:outputLabel id="outputLabel" value="#{helloBean.message}" /><br />
+        <p:inputText id="inputText" value="#{helloBean.message}" /><br />
+        <!-- O atributo update abaixo foi adicionado -->
+        <p:commandButton id="updateButton" value="Update Message" action="#{helloBean.updateMessage2}" update="outputLabel" />
+    </h:form>
+</h:body>
+</html>

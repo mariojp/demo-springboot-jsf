@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.AutoConfiguration.imports=\br.com.mariojp.demo.JsfAutoConfiguration
